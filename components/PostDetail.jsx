@@ -29,7 +29,7 @@ const PostDetail = ({ post }) => {
                 </p>;
           case 'code-block':
               return <code 
-                className="block whitespace-pre overflow-x-scroll mb-8 bg-gray-800 text-white dark:text-gray-300"
+                className="block whitespace-pre overflow-x-scroll py-4 px-2 mb-8 bg-gray-800 text-white dark:text-gray-300"
                 key={index}
                 > 
                     {modifiedText.map((item, i) => <React.Fragment key={i}>{item}</React.Fragment>)} 

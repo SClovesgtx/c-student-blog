@@ -1,16 +1,17 @@
-import { GraphQlClient, gql } from 'graphql-request';
+import { GraphQLClient, gql } from 'graphql-request';
 
 /** *************************************************************
 * Any file inside the folder pages/api is mapped to /api/* and  *
 * will be treated as an API endpoint instead of a page.         *
 *************************************************************** */
 
-const { graphqlAPI } = process.env.NEXT_PUBLIC_GRAPHCMS_ENDPOINT;
+const graphQLAPI = process.env.NEXT_PUBLIC_GRAPHCMS_ENDPOINT;
+const graphQLToken = process.env.GRAPHCMS_TOKEN;
 
 export default async function comments(req, res) {
-  const graphQlClient = new GraphQlClient(graphqlAPI, {
+  const graphQLClient = new GraphQLClient(graphQLAPI, {
     headers: { 
-      authorization: `Bearer ${process.env.GRAPHCMS_TOKEN}`,
+      authorization: `Bearer ${graphQLToken}`,
     }
   });
 
@@ -19,6 +20,12 @@ export default async function comments(req, res) {
       createComment(data: { name: $name, email: $email, comment: $comment, post: { connect: { slug: $slug}}}) { id }
     }
   `
-  const result = await graphQlClient.request(query, req.body)
-  return res.status(200).send(result);
+  try {
+    const result = await graphQLClient.request(query, req.body)
+    return res.status(200).send(result);
+  } catch (error) {
+    console.log(error);
+    return res.status(500).send(error);
+  }
+
 }
