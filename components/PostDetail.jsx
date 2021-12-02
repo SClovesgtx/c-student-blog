@@ -29,7 +29,7 @@ const PostDetail = ({ post }) => {
                 </p>;
           case 'code-block':
               return <code 
-                className="block whitespace-pre overflow-x-scroll py-4 px-2 mb-8 bg-gray-800 text-white dark:text-gray-300"
+                className="block rounded-lg whitespace-pre overflow-x-scroll py-4 px-2 mb-8 bg-gray-800 text-white dark:text-gray-300"
                 key={index}
                 > 
                     {modifiedText.map((item, i) => <React.Fragment key={i}>{item}</React.Fragment>)} 
@@ -67,18 +67,6 @@ const PostDetail = ({ post }) => {
             </div>
             <div className="px-4 lg:px-0">
                 <div className="flex items-center mb-8 w-full">
-                    <div className="flex items-center justify-center mb-4 lg:mb-0 w-full lg:w-auto mr-8">
-                        <img 
-                            alt={ post.author.name }
-                            height="50px"
-                            width="50px"
-                            className="align-middle rounded-full"
-                            src={post.author.photo.url}
-                        />
-                        <p className="inline align-middle text-gray-700 ml-2 text-lg">
-                            {post.author.name}
-                        </p>
-                    </div>
                     <div className="font-medium text-gray-700">
                         <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 inline mr-2 text-pink-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             <path 
