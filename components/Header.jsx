@@ -17,7 +17,7 @@ const Header = () => {
                     <div className="flex items-center flex-col justify-center">
                         <img className="rounded-full" height="100px" width="100px" src="eu.jpg"/>
                         <span className="cursor-pointer mt-4 font-bold text-4xl text-white">
-                            C-STUDENT
+                            C-Student
                         </span>
                     </div>
                     <div className="flex justify-around items-center">
@@ -28,13 +28,13 @@ const Header = () => {
   
                         </Link>
                     
-                        <Link href="/">
-                                <span className="cursor-pointer mt-4 font-bold text-4xl text-white">
-                                    Sobre o Blog
-                                </span>
+                        <Link href="/about/blog">
+                            <span className="cursor-pointer mt-4 font-bold text-4xl text-white">
+                                Sobre o Blog
+                            </span>
                         </Link>
 
-                        <Link href="/">
+                        <Link href="/about/me">
                             <span className="cursor-pointer mt-4 font-bold text-4xl text-white">
                                 Sobre Mim
                             </span>

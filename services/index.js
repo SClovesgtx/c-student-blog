@@ -70,6 +70,22 @@ export const getPostDetails = async (slug) => {
     return result.post;
 };
 
+export const getAbout = async (slug) => {
+    const query = gql`
+      query GetAbout($slug : String!) {
+        about(where: {slug: $slug}) {
+          content
+        }
+      }
+    `;
+  
+    const result = await request(graphqlAPI, query, { slug });
+
+    console.log("about:", result);
+  
+    return result.about;
+};
+
 export const getRecentPosts = async () => {
     const query = gql`
         query GetPostDetails() {
