@@ -1,4 +1,4 @@
-import { About, AboutBlog } from '../../../components';
+import { AboutBlog } from '../../../components';
 
 const AboutMyBlog = () => <AboutBlog/>
 

@@ -15,10 +15,10 @@ function AboutBlog() {
                 </ol>
                 <p>Por que do nome C-Student? Bem, a imagem abaixo ajuda a explicar isso:</p>
                 <img height="100px" width="100px" src="eu-guinness.jpeg"/>
-                <p className="mb-8">Você pode estar se perguntando:  que tem a ver este cara estranho, 
-                com uma latinha de Guinness na mão e uma estante de livros atrás?. Tudo a ver!
+                <p className="mb-8">Você pode estar se perguntando:  o que tem a ver este cara estranho, 
+                com uma latinha de Guinness na mão e uma estante de livros atrás com o nome C-Student?. Tudo a ver!
                 </p>
-                <p className="mb-8">O cara estranho sou eu (o Cloves Adriano) e, como me considero um eterno estudante, 
+                <p className="mb-8">O cara estranho sou eu (o Cloves Paiva) e, como me considero um eterno estudante, 
                     decidi chamar o blog de C-Student, nome este inspirado no pseudônimo t-student adotado 
                     pelo estatístico William Sealy Gosset, quando teve que publicar sobre uma distribuição 
                     probabilística que ele derivou em decorrência do trabalho que executava no controle de 

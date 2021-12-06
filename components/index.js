@@ -9,4 +9,3 @@ export { default as CommentsForm } from './CommentsForm';
 export { default as PostDetail } from './PostDetail';
 export { default as AboutBlog} from './AboutBlog';
 export { default as AboutMe} from './AboutMe';
-export { default as About} from './About';
