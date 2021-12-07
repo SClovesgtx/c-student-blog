@@ -1,7 +1,10 @@
 import React, {useContext, useState, useEffect} from 'react';
 import { getCategories } from '../services';
-
+import Image from 'next/image';
 import Link from 'next/link';
+import eu from '../public/eu.jpg'
+
+const BASE_URL = process.env.BASE_URL;
 
 const Header = () => {
 
@@ -9,13 +12,14 @@ const Header = () => {
     useEffect(() => {
         getCategories().then(newCategories => setCategories(newCategories))
     }, [])
-
+    const imagePath = `${BASE_URL}/public/eu.jpeg`;
+    console.log("IMAGE:", imagePath)
     return (
         <div className="container mx-auto px-10 mb-8">
             <div className="border-b w-full inline-block border-blue-400 py-8">
                 <div className="flex justify-center gap-10 flex-col">
                     <div className="flex items-center flex-col justify-center">
-                        <img className="rounded-full" height="100px" width="100px" src="eu.jpg"/>
+                        <Image className="rounded-full" height="100px" width="100px" src={eu}/>
                         <span className="cursor-pointer mt-4 font-bold text-4xl text-white">
                             C-Student
                         </span>

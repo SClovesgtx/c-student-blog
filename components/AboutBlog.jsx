@@ -1,4 +1,6 @@
 import React from 'react';
+import Image from 'next/image';
+import euGuinness from '../public/eu-guinness.jpeg';
 
 function AboutBlog() {
     return (
@@ -13,16 +15,16 @@ function AboutBlog() {
                     área de desenvolvimento web.</li>
                     <li key='3' className="mb-4">3º - Portfólio pessoal.</li>
                 </ol>
-                <p>Por que do nome C-Student? Bem, a imagem abaixo ajuda a explicar isso:</p>
-                <img height="100px" width="100px" src="eu-guinness.jpeg"/>
-                <p className="mb-8">Você pode estar se perguntando:  o que tem a ver este cara estranho, 
-                com uma latinha de Guinness na mão e uma estante de livros atrás com o nome C-Student?. Tudo a ver!
+                <p className="mb-8">Por que do nome C-Student? Bem, a imagem abaixo ajuda a explicar isso:</p>
+                <Image height="400px" width="320px" src={euGuinness}/>
+                <p className="mt-8 mb-8">Você pode estar se perguntando:  o que este cara estranho, 
+                com uma latinha de Guinness na mão e uma estante de livros atrás tem a ver com o nome C-Student? Tudo a ver!
                 </p>
                 <p className="mb-8">O cara estranho sou eu (o Cloves Paiva) e, como me considero um eterno estudante, 
-                    decidi chamar o blog de C-Student, nome este inspirado no pseudônimo t-student adotado 
+                    decidi chamar o blog de C-Student, nome este inspirado no pseudônimo <a href="https://en.wikipedia.org/wiki/Student%27s_t-distribution#History_and_etymology"><u>t-student</u></a> adotado 
                     pelo estatístico William Sealy Gosset, quando teve que publicar sobre uma distribuição 
                     probabilística que ele derivou em decorrência do trabalho que executava no controle de 
-                    qualidade na famosa cervejaria irlandesa Guinness.
+                    qualidade na famosa cervejaria irlandesa <a href="https://en.wikipedia.org/wiki/Guinness_Brewery"><u>Guinness</u></a>.
                 </p>
                 <p className="mb-8">Espero que consigam encontrar algo de útil aqui e bora trocar figurinhas.</p>
 
