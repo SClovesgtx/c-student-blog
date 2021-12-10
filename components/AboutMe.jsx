@@ -5,7 +5,7 @@ function AboutMe() {
         <div className="container mx-auto px-10 mb-8">
             <div className="bg-white shadow-lg rounded-lg lg:p-8 pb-12 mb-8 text-2xl lg:px-10">
                 <p className="mb-8">Olá! Me chamo Cloves Paiva, casado, sou natural de Goiás e atualmente resido em Florianópolis-SC.</p>
-                <p className="mb-8">Tenho 5 anos de experiência na lida com dados, especialmente focado em modelagem de chatbots, criação 
+                <p className="mb-8">Tenho 5 anos de experiência na lida com dados, focado principalmente em modelagem de chatbots, criação 
                 de relatórios analíticos e dashboards.</p>
                 <p className="mb-8">Recentemente tenho me didicado a aprofundar meus conhecimentos na visualização de dados na web usando ferramentas como React.js e D3.js.</p>
                 <p className="mb-8">Meus principais hobbies são:</p>
@@ -20,7 +20,7 @@ function AboutMe() {
                         <strong>Samba</strong>: curto muito música brasileira no geral mas tenho 
                         especial carinho pelo samba (especialmente aqueles produzidos entre as décadas de 60 e 80). 
                         Toco cavaquinho, pandeiro e, sempre que possível, gosto de me reunir com amigos para fazer 
-                        um som (clique <a href="https://youtu.be/eB0nIFsFw3Q"><u>aqui</u></a> para me ver tocando).
+                        um som (clique <a target="_blank" href="https://youtu.be/eB0nIFsFw3Q"><u>aqui</u></a> para me ver tocando).
                     </li>
                 </ol>
                 <p className="mb-8">E é mais ou menos isso que sou hoje.</p>

@@ -44,7 +44,7 @@ const Header = () => {
                             </span>
                         </Link>
 
-                        <Link href="/">
+                        <Link href="/about/contacts">
                             <span className="cursor-pointer mt-4 font-bold text-4xl text-white">
                                 Contatos
                             </span>
