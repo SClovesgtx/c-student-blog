@@ -64,18 +64,18 @@ a {
 }
 
 /* CODE BLOCK */
-.code
-{
-  display: block;
-  max-height: 500px;
-  width: 100%;
-  margin: 20px 0;
-  font-family: monospace;
-  font-size: 13px;
-  line-height: 23px;
-  position: relative;
-  overflow: auto
-}
+// .code
+// {
+//   display: block;
+//   max-height: 500px;
+//   width: 100%;
+//   margin: 20px 0;
+//   font-family: monospace;
+//   font-size: 13px;
+//   line-height: 23px;
+//   position: relative;
+//   overflow: auto
+// }
 
 .code .numbers, .code .source { float: left }
 

@@ -1,9 +1,23 @@
 import React from 'react';
 
+const handleLink = (obj, index) => {
+  return ((<a target="_blanck" className="text-#0B0080" href={obj.href} key={index}><u>{obj.children[0]["text"]}</u></a>))
+}
+
+const handleListItems = (obj) => {
+  console.log("LIST ITEM:", obj.children[0].children[0].children)
+  return (
+    obj.children.map((listItem, index) => {
+      <li key={index}>{listItem.children[0].text}</li>
+    }
+    )
+  )
+}
 
 export const getContentFragment = (index, text, obj, type) => {
     let modifiedText = text;
-
+    
+    console.log(obj)
     if (obj) {
       if (obj.bold) {
         modifiedText = (<b key={index}>{text}</b>);
@@ -11,6 +25,14 @@ export const getContentFragment = (index, text, obj, type) => {
 
       if (obj.italic) {
         modifiedText = (<em key={index}>{text}</em>);
+      }
+
+      if (obj.type === 'link') {
+        modifiedText = handleLink(obj, index);
+      }
+
+      if (obj.type === 'bulleted-list') {
+        modifiedText = handleListItems(obj, index);
       }
 
       if (obj.underline) {

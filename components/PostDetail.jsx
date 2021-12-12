@@ -1,8 +1,10 @@
 import React from 'react';
+import { RichText } from '@graphcms/rich-text-react-renderer';
 import moment from 'moment';
 import { getContentFragment } from '../utils/getContentFragment.js';
 
 const PostDetail = ({ post }) => {
+    console.log(post.content.raw)
     return (
         <div className="bg-white shadow-lg rounded-lg lg:p-8 pb-12 mb-8">
             <div className="relative overflow-hidden shadow-md mb-6">
@@ -27,10 +29,14 @@ const PostDetail = ({ post }) => {
                     </div>
                 </div>
                 <h1 className="mb-8 text-3xl font-semibold">{post.title}</h1>
-                {post.content.raw.children.map((typeObj, index) => {
-                    const children = typeObj.children.map( (item, itemIndex) => getContentFragment(itemIndex, item.text, item))
-                    return getContentFragment(index, children, typeObj, typeObj.type);
-                })}
+                {/* <div dangerouslySetInnerHTML={{ __html: post.content.html }} /> */}
+                <RichText content={post.content.raw} />
+                {/* <div>
+                    {post.content.raw.children.map((obj, index) => {
+                        const children = obj.children.map( (item, itemIndex) => getContentFragment(itemIndex, item.text, item))
+                        return getContentFragment(index, children, obj, obj.type);
+                    })}
+                </div> */}
             </div>
         </div>
     )
