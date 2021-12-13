@@ -1,10 +1,11 @@
 import React from 'react';
+import util from "util";
 import { RichText } from '@graphcms/rich-text-react-renderer';
 import moment from 'moment';
 import { getContentFragment } from '../utils/getContentFragment.js';
 
 const PostDetail = ({ post }) => {
-    console.log(post.content.raw)
+    // console.log(util.inspect(post.content.raw, {showHidden: false, depth: null, colors: true}))
     return (
         <div className="bg-white shadow-lg rounded-lg lg:p-8 pb-12 mb-8">
             <div className="relative overflow-hidden shadow-md mb-6">
@@ -29,14 +30,46 @@ const PostDetail = ({ post }) => {
                     </div>
                 </div>
                 <h1 className="mb-8 text-3xl font-semibold">{post.title}</h1>
-                {/* <div dangerouslySetInnerHTML={{ __html: post.content.html }} /> */}
-                <RichText content={post.content.raw} />
-                {/* <div>
-                    {post.content.raw.children.map((obj, index) => {
-                        const children = obj.children.map( (item, itemIndex) => getContentFragment(itemIndex, item.text, item))
-                        return getContentFragment(index, children, obj, obj.type);
-                    })}
-                </div> */}
+                {/* https://graphcms.com/blog/graphcms-react-rich-text-renderer */}
+                {/* https://github.com/GraphCMS/rich-text/tree/main/packages/react-renderer#custom-elements */}
+                <RichText 
+                    content={post.content.raw}
+                    renderers={{
+                        p: ({ children }) => <p className="mb-8">{children}</p>,
+                        h3: ({ children }) => <h3 className="text-xl font-semibold mb-4">{children}</h3>,
+                        a: ({ children, openInNewTab, href, rel, ...rest }) => {
+                              return (
+                                <a
+                                  href={href}
+                                  target={openInNewTab ? '_blank' : '_self'}
+                                  rel={rel || 'noopener noreferrer'}
+                                  {...rest}
+                                >
+                                  <u>{children}</u>
+                                </a>
+                        )},
+                        code_block: ({ children }) => {
+                            return (
+                                <code className="block rounded-lg whitespace-pre overflow-x-scroll py-4 px-2 mb-8 bg-gray-800 text-white dark:text-gray-300">
+                                    {children}
+                                </code>
+                            )
+                        },
+                        img: ({ src }) => <img src={src} className='mb-8'/>,
+                        ol: ({ children }) => <ul className="list-decimal ml-8 mb-8">{children}</ul>,
+                        ul: ({ children }) => <ul className="list-disc ml-8 mb-8">{children}</ul>,
+                        li: ({ children }) => <li className='mb-4'>{children}</li>,
+                        blockquote: ({ children}) => {
+                           return( 
+                                <p 
+                                    className="p-4 italic border-l-4 bg-neutral-100 mb-8 text-neutral-600 border-neutral-500 quote"
+                                >
+                                    {children}
+                                </p>
+                           )
+                        },
+                      }}
+                />
             </div>
         </div>
     )
