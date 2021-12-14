@@ -10,7 +10,7 @@ import git from "../public/github.png";
 function Contacts() {
     return (
         <div className="container mx-auto px-10 mb-8">
-        <div className="flex flex-col items-center justify-center bg-white shadow-lg rounded-lg lg:p-8 pb-12 mb-8 text-2xl lg:px-10">
+        <div className="flex flex-col items-center justify-center bg-white shadow-lg rounded-lg lg:p-8 pb-12 mb-8 text-2xl px-10 py-8">
             <p className="mb-8">Você pode entrar em contato/conexão comigo através das seguintes mídias sociais:</p>
             <div className="flex gap-8">
                 <a target="_blank" href="https://www.linkedin.com/in/cloves-paiva-02b449124/">

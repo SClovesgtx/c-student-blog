@@ -4,8 +4,8 @@ import euGuinness from '../public/eu-guinness.jpeg';
 
 function AboutBlog() {
     return (
-        <div className="container mx-auto px-10 mb-8">
-            <div className="bg-white shadow-lg rounded-lg lg:p-8 pb-12 mb-8 text-2xl lg:px-10">
+        <div className="container mx-auto px-10 mb-8 px-10">
+            <div className="bg-white shadow-lg rounded-lg pb-12 mb-8 py-8 text-2xl px-10">
                 <p className="mb-8">Criei este blog com três objetivos principais:</p>
                 <ol className="list-item px-10">
                     <li key='1' className="mb-4">1º - Compartilhar com vocês o que venho aprendendo na área de dados.</li>

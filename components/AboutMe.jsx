@@ -3,7 +3,7 @@ import React from 'react';
 function AboutMe() {
     return (
         <div className="container mx-auto px-10 mb-8">
-            <div className="bg-white shadow-lg rounded-lg lg:p-8 pb-12 mb-8 text-2xl lg:px-10">
+            <div className="bg-white shadow-lg rounded-lg pb-12 mb-8 py-8 text-2xl px-10">
                 <p className="mb-8">Olá! Me chamo Cloves Paiva, casado, sou natural de Goiás e atualmente resido em Florianópolis-SC.</p>
                 <p className="mb-8">Tenho 5 anos de experiência na lida com dados, focado principalmente em modelagem de chatbots, criação 
                 de relatórios analíticos e dashboards.</p>
