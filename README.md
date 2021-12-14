@@ -1,29 +1,11 @@
-# Next.js + Tailwind CSS Example
+# Blog C-Student
 
-This example shows how to use [Tailwind CSS](https://tailwindcss.com/) [(v2.2)](https://blog.tailwindcss.com/tailwindcss-2-2) with Next.js. It follows the steps outlined in the official [Tailwind docs](https://tailwindcss.com/docs/guides/nextjs).
+Acesse o Blog clicando [aqui](https://c-student-blog.vercel.app/).
 
-It uses the new [`Just-in-Time Mode`](https://tailwindcss.com/docs/just-in-time-mode) for Tailwind CSS.
+# Agradecimentos
 
-## Preview
+Construí este blog graças ao tutorial [Build and Deploy THE BEST Modern Blog App with React | GraphQL, NextJS, Tailwind CSS](https://www.youtube.com/watch?v=HYv55DhgTuA&list=LL&index=14)  disponibilizado pelo Adrian Hajdin (clique [aqui](https://github.com/adrianhajdin/project_graphql_blog) para ver o projeto original). Meu muito obrigado a ele por compartilhar seus conhecimentos gratuitamente.
 
-Preview the example live on [StackBlitz](http://stackblitz.com/):
+Também agradeço ao [Luiz Otávio Miranda Figueiredo](https://www.linkedin.com/in/todoespacoonline/) pois foi através do seu curso [Curso de React.Js + Next.Js completo do básico ao avançado](https://www.udemy.com/course/curso-de-reactjs-nextjs-completo-do-basico-ao-avancado/) que consegui ter o backgroud necessário tanto para conseguir acompanhar e entender o conteúdo apresentado pelo [Adrian Hajdin](https://github.com/adrianhajdin), como também para me sentir à vontade em personalizar meu Blog e criar visualizações de dados na web.
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/vercel/next.js/tree/canary/examples/with-tailwindcss)
-
-## Deploy your own
-
-Deploy the example using [Vercel](https://vercel.com?utm_source=github&utm_medium=readme&utm_campaign=next-example):
-
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/git/external?repository-url=https://github.com/vercel/next.js/tree/canary/examples/with-tailwindcss&project-name=with-tailwindcss&repository-name=with-tailwindcss)
-
-## How to use
-
-Execute [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) with [npm](https://docs.npmjs.com/cli/init) or [Yarn](https://yarnpkg.com/lang/en/docs/cli/create/) to bootstrap the example:
-
-```bash
-npx create-next-app --example with-tailwindcss with-tailwindcss-app
-# or
-yarn create next-app --example with-tailwindcss with-tailwindcss-app
-```
-
-Deploy it to the cloud with [Vercel](https://vercel.com/new?utm_source=github&utm_medium=readme&utm_campaign=next-example) ([Documentation](https://nextjs.org/docs/deployment)).
+Não posso deixar de mencionar o suporte constante que recebo, em relação ao frontend, da minha querida esposa [Daniela Müller](https://www.linkedin.com/in/danielamuller20/).
