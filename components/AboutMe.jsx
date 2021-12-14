@@ -11,8 +11,7 @@ function AboutMe() {
                 <p className="mb-8">Meus principais hobbies são:</p>
                 <ol className="list-item px-10">
                     <li key='1' className="mb-4">
-                        <strong>Literatura</strong>: gosto principalmente dos livros que 
-                        tratam sobre a natureza e a condição humana (sou fã da literatura russa). Acredito muito que a 
+                        <strong>Literatura</strong>: Acredito muito que a 
                         leitura dos grandres clássicos nos ajudam a aprimorar nosso entendimento sobre o mundo, 
                         a sermos mais empáticos e a lidar melhor com nossos problemas tanto no nível individual como coletivo.
                     </li>

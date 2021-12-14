@@ -1,4 +1,4 @@
-import React, {useContext, useState, useEffect} from 'react';
+import React, {useState, useEffect} from 'react';
 import { getCategories } from '../services';
 import Image from 'next/image';
 import Link from 'next/link';
@@ -12,8 +12,7 @@ const Header = () => {
     useEffect(() => {
         getCategories().then(newCategories => setCategories(newCategories))
     }, [])
-    const imagePath = `${BASE_URL}/public/eu.jpeg`;
-    console.log("IMAGE:", imagePath)
+
     return (
         <div className="container mx-auto px-10 mb-8">
             <div className="border-b w-full inline-block border-blue-400 py-8">
