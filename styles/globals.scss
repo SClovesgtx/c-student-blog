@@ -63,6 +63,13 @@ a {
   box-sizing: border-box;
 }
 
+@media (max-width: 1024px) {
+  .menu-container{
+    display: flex;
+    flex-direction: column;
+  }
+}
+
 /* CODE BLOCK */
 // .code
 // {
