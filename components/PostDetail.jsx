@@ -36,6 +36,8 @@ const PostDetail = ({ post }) => {
                     content={post.content.raw}
                     renderers={{
                         p: ({ children }) => <p className="mb-8">{children}</p>,
+                        h1: ({ children }) => <h1 className="text-xl font-semibold mb-4">{children}</h1>,
+                        h2: ({ children }) => <h2 className="text-xl font-semibold mb-4">{children}</h2>,
                         h3: ({ children }) => <h3 className="text-xl font-semibold mb-4">{children}</h3>,
                         a: ({ children, openInNewTab, href, rel, ...rest }) => {
                               return (
