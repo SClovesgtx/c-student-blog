@@ -12,7 +12,7 @@ function AboutMe() {
                 <ol className="list-item px-10">
                     <li key='1' className="mb-4">
                         <strong>Literatura</strong>: Acredito muito que a 
-                        leitura dos grandres clássicos nos ajudam a aprimorar nosso entendimento sobre o mundo, 
+                        leitura dos grandes clássicos nos ajudam a aprimorar nosso entendimento sobre o mundo, 
                         a sermos mais empáticos e a lidar melhor com nossos problemas tanto no nível individual como coletivo.
                     </li>
                     <li key='2' className="mb-8">
