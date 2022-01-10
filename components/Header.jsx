@@ -23,7 +23,7 @@ const Header = () => {
                             C-Student
                         </span>
                     </div>
-                    <div className="flex justify-around items-center menu-container">
+                    <nav className="flex justify-around items-center menu-container">
                         <Link href="/">  
                             <span className="cursor-pointer mt-4 font-bold text-4xl text-white">
                                 Postagens
@@ -48,7 +48,7 @@ const Header = () => {
                                 Contatos
                             </span>
                         </Link>
-                    </div>
+                    </nav>
                 </div>
             </div>
         </div>
