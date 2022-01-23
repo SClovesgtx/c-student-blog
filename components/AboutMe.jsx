@@ -19,7 +19,7 @@ function AboutMe() {
                         <strong>Samba</strong>: curto muito música brasileira no geral mas tenho 
                         especial carinho pelo samba (especialmente aqueles produzidos entre as décadas de 60 e 80). 
                         Toco cavaquinho, pandeiro e, sempre que possível, gosto de me reunir com amigos para fazer 
-                        um som (clique <a target="_blank" href="https://youtu.be/eB0nIFsFw3Q"><u>aqui</u></a> para me ver tocando).
+                        um som (clique <a className="text-blue-600 hover:text-blue-800 visited:text-purple-600" target="_blank" href="https://youtu.be/eB0nIFsFw3Q">aqui</a> para me ver tocando).
                     </li>
                 </ol>
                 <p className="mb-8">E é mais ou menos isso que sou hoje.</p>

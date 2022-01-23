@@ -1,11 +1,9 @@
+import Link from 'next/link';
 import React from 'react';
-import util from "util";
 import { RichText } from '@graphcms/rich-text-react-renderer';
 import moment from 'moment';
-import { getContentFragment } from '../utils/getContentFragment.js';
 
 const PostDetail = ({ post }) => {
-    // console.log(util.inspect(post.content.raw, {showHidden: false, depth: null, colors: true}))
     return (
         <div className="bg-white shadow-lg rounded-lg lg:p-8 pb-12 mb-8">
             <div className="relative overflow-hidden shadow-md mb-6">
@@ -40,16 +38,26 @@ const PostDetail = ({ post }) => {
                         h2: ({ children }) => <h2 className="text-xl font-semibold mb-4">{children}</h2>,
                         h3: ({ children }) => <h3 className="text-xl font-semibold mb-4">{children}</h3>,
                         a: ({ children, openInNewTab, href, rel, ...rest }) => {
+                            if (href.match(/^https?:\/\/|^\/\//i)) {
                               return (
                                 <a
+                                 className="text-blue-600 hover:text-blue-800 visited:text-purple-600"
                                   href={href}
                                   target={openInNewTab ? '_blank' : '_self'}
                                   rel={rel || 'noopener noreferrer'}
                                   {...rest}
                                 >
-                                  <u>{children}</u>
+                                  {children}
                                 </a>
-                        )},
+                              );
+                            }
+                  
+                            return (
+                              <Link href={href}>
+                                <a {...rest}>{children}</a>
+                              </Link>
+                            );
+                        },
                         code_block: ({ children }) => {
                             return (
                                 <code className="block rounded-lg whitespace-pre overflow-x-scroll py-4 px-2 mb-8 bg-gray-800 text-white dark:text-gray-300">

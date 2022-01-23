@@ -19,10 +19,10 @@ function AboutBlog() {
                 com uma latinha de Guinness na mão e uma estante de livros atrás tem a ver com o nome C-Student?
                 </p>
                 <p className="mb-8">O cara estranho sou eu (o Cloves Paiva) e, como me considero um eterno estudante, 
-                    decidi chamar o blog de C-Student, nome este inspirado no pseudônimo <a target="_blank" href="https://en.wikipedia.org/wiki/Student%27s_t-distribution#History_and_etymology"><u>t-student</u></a> adotado 
+                    decidi chamar o blog de C-Student, nome este inspirado no pseudônimo <a className="text-blue-600 hover:text-blue-800 visited:text-purple-600" target="_blank" href="https://en.wikipedia.org/wiki/Student%27s_t-distribution#History_and_etymology">t-student</a> adotado 
                     pelo estatístico William Sealy Gosset, quando teve que publicar sobre uma distribuição 
                     probabilística que ele derivou em decorrência do trabalho que executava no controle de 
-                    qualidade na famosa cervejaria irlandesa <a target="_blank" href="https://en.wikipedia.org/wiki/Guinness_Brewery"><u>Guinness</u></a>.
+                    qualidade na famosa cervejaria irlandesa <a className="text-blue-600 hover:text-blue-800 visited:text-purple-600" target="_blank" href="https://en.wikipedia.org/wiki/Guinness_Brewery">Guinness</a>.
                 </p>
                 <p className="mb-8">Espero que consigam encontrar algo de útil aqui e bora trocar figurinhas.</p>
 
