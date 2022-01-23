@@ -41,11 +41,11 @@ const PostDetail = ({ post }) => {
                             if (href.match(/^https?:\/\/|^\/\//i)) {
                               return (
                                 <a
-                                 className="text-blue-600 hover:text-blue-800 visited:text-purple-600"
+                                  {...rest}
+                                  className="text-blue-600 hover:text-blue-800 visited:text-purple-600"
                                   href={href}
                                   target={openInNewTab ? '_blank' : '_self'}
                                   rel={rel || 'noopener noreferrer'}
-                                  {...rest}
                                 >
                                   {children}
                                 </a>
