@@ -12,8 +12,8 @@ function AboutMe() {
                 <ol className="list-item px-10">
                     <li key='1' className="mb-4">
                         <strong>Literatura</strong>: Acredito muito que a 
-                        leitura dos grandes clássicos nos ajudam a aprimorar nosso entendimento sobre o mundo, 
-                        a sermos mais empáticos e a lidar melhor com nossos problemas tanto no nível individual como coletivo.
+                        leitura dos grandes clássicos nos ajudam a aprimorar nosso entendimento sobre a natureza humana, 
+                        nos tornar mais empáticos e a lidar melhor com ansiedades existenciais.
                     </li>
                     <li key='2' className="mb-8">
                         <strong>Música</strong>: curto muito música brasileira no geral mas tenho 

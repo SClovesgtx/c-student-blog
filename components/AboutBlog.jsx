@@ -6,13 +6,7 @@ function AboutBlog() {
     return (
         <div className="container mx-auto px-10 mb-8 px-10">
             <div className="bg-white shadow-lg rounded-lg pb-12 mb-8 py-8 text-2xl px-10">
-                <p className="mb-8">Criei este blog com três objetivos principais:</p>
-                <ol className="list-item px-10">
-                    <li key='1' className="mb-4">1º - Compartilhar com vocês o que venho aprendendo na área de dados.</li>
-                    <li key='2' className="mb-4">2º - Usar este blog como playground para evoluir minhas habilidades na 
-                    área de desenvolvimento web.</li>
-                    <li key='3' className="mb-4">3º - Portfólio pessoal.</li>
-                </ol>
+            <p className="mb-8">Criei este blog com o objetivo de compartilhar o que venho aprendendo sobre curadoria de assistentes digitais, entre outras coisas mais que me interessam.</p>
                 <p className="mb-8">Por que do nome C-Student? Bem, a imagem abaixo ajuda a explicar isso:</p>
                 <Image height="400px" width="320px" src={euGuinness}/>
                 <p className="mt-8 mb-8">Você pode estar se perguntando:  o que este cara estranho, 
